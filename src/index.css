@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -24,9 +26,15 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
+  /* display: flex; removed to allow content to fill normally */
+  /* place-items: center; removed for the same reason */
   min-width: 320px;
+  min-height: 100vh;
+}
+
+/* Ensure the root div where the React app mounts takes full viewport height */
+#root {
+  width: 100%;
   min-height: 100vh;
 }
 
